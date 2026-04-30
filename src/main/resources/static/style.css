@@ -1,0 +1,59 @@
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* BOX */
+.login-box {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ALL INPUT SAME SIZE */
+input, select {
+    width: 100%;
+    height: 40px; /* FIX HEIGHT */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* PASSWORD BOX */
+.password-container {
+    position: relative;
+}
+
+/* FIX PASSWORD INPUT (MATCH OTHERS) */
+.password-container input {
+    padding-right: 40px; /* space for eye */
+}
+
+/* EYE ICON PERFECT CENTER */
+.eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    height: 40px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

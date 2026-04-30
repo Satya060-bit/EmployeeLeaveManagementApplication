@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin-top: 50px;
+        }
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 250px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background: green;
+            color: white;
+            border: none;
+        }
+        table {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Employee Dashboard</h2>
+
+<input id="employeeName" placeholder="Employee Name">
+<input id="type" placeholder="Leave Type">
+<input type="date" id="startDate">
+<input type="date" id="endDate">
+<input id="reason" placeholder="Reason">
+
+<button onclick="applyLeave()">Apply Leave</button>
+
+<br>
+
+<button onclick="getLeaves()">View My Leaves</button>
+<button onclick="logout()">Logout</button>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Reason</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="leaveTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

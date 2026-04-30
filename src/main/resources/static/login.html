@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>Employee Leave Management System</h2>
+
+    <!-- EMAIL -->
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <!-- PASSWORD -->
+    <div class="password-container">
+        <input type="password" id="password" placeholder="Enter Password">
+        <span class="eye" onclick="togglePassword()">👁</span>
+    </div>
+
+    <!-- ROLE -->
+    <select id="role">
+        <option>Employee</option>
+        <option>Manager</option>
+    </select>
+
+    <!-- BUTTON -->
+    <button onclick="login()">Login</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
